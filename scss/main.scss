@@ -251,7 +251,31 @@ button,
       opacity: 0.9;
       background: center center / cover url("../assets/gradient.png");
     }
+  }
+
+  &__hover_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: 12%;
     
+
+    .fab {
+      box-sizing: border-box;
+      margin: 1px;
+      padding: 5px;
+      width: 25%;
+      background-color: $hoverFontColor;
+      vertical-align: center;
+      font-size: 1.5em;
+      color: $lineColor;
+
+      &:hover {
+        background-color: $lineColor;
+        color: $lightFontColor;
+      }
+    }
   }
 
   &__info {

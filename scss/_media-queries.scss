@@ -255,6 +255,11 @@
     &__sample {
       flex-wrap: wrap;
     }
+
+    &__employee {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   
   .wrapper {
@@ -335,6 +340,10 @@
     }
   }
 
+  .employee {
+    width: 70%;
+  }
+
   .clients-say {
     padding: 60px 0;
   }
@@ -359,6 +368,10 @@
     &_round {
       height: 70px;
     }
+  }
+
+  .fab {
+    padding: 15px;
   }
 }
 
