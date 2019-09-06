@@ -18,6 +18,7 @@
 
 body {
   margin: 0;
+  font-family: Roboto, serif;
 }
 
 /* COMMON HOVER STYLE */
@@ -101,7 +102,7 @@ button,
   &__subtitle {
     margin: 0;
     text-align: center;
-    font-family: KaushanScript-Regular;
+    font-family: $secondaryFont;
     font-size: 1.4em;
   }
 
@@ -254,9 +255,9 @@ button,
   }
 
   &__hover_icons {
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    display: flex;
     width: 65%;
     height: 12%;
     
@@ -628,13 +629,13 @@ button,
 }
 
 .devices {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
   padding-top: 30px;
   background: center center / cover url("../assets/lake_bg.png") no-repeat;
-  z-index: 1;
 
   &::before {
     @include gradientStyle("../assets/gray_bg.png");
@@ -684,7 +685,7 @@ button,
 .author {
   margin: 0;
   padding-left: 10px;
-  font-family: KaushanScript-Regular;
+  font-family: $secondaryFont;
   font-size: 1.4em;
 }
 
@@ -734,8 +735,8 @@ button,
 }
 
 .sample {
-  display: flex;
   position: relative;
+  display: flex;
 }
 
 .clients-say {
